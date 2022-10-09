@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-08T12:58:21.389Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="BVsgK_T_cik1hvF2Dw-L" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-09T03:59:27.546Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="5e6BCL5A-1hLcdfREzFC" version="20.3.0" type="github">
   <diagram id="ZonnoPbawyth3ANZm7IB" name="第 1 页">
-    <mxGraphModel dx="924" dy="1782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="862" dy="1576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFECDE" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -42,8 +42,11 @@
         <mxCell id="PA8Aa21u_JiDVCU1fkNM-11" value="调用c++接口g_vdr_manager.setVdrIndoorFloor(floorstr, timestamp);" style="rounded=0;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontFamily=Helvetica;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="220" y="620" width="270" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="PA8Aa21u_JiDVCU1fkNM-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="PA8Aa21u_JiDVCU1fkNM-13" target="PA8Aa21u_JiDVCU1fkNM-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="PA8Aa21u_JiDVCU1fkNM-13" value="调用[strongSelf updateNetLocation:location withDelayTime:(t2 - time) * 1000];" style="rounded=0;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontFamily=Helvetica;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="176" y="730" width="358" height="77.5" as="geometry" />
+          <mxGeometry x="176" y="1176.25" width="358" height="77.5" as="geometry" />
         </mxCell>
         <mxCell id="PA8Aa21u_JiDVCU1fkNM-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="PA8Aa21u_JiDVCU1fkNM-16" target="PA8Aa21u_JiDVCU1fkNM-20">
           <mxGeometry relative="1" as="geometry" />
@@ -170,6 +173,21 @@
         </mxCell>
         <mxCell id="PA8Aa21u_JiDVCU1fkNM-75" value="[[BMKVdrRoadDataManager getShareInstance] startWithNaviPoints:nil withCuid:super.cuid withOnlyIndoorFloor:nil];" style="rounded=0;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fontFamily=Helvetica;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="2590.6" y="1010" width="505" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="PA8Aa21u_JiDVCU1fkNM-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="PA8Aa21u_JiDVCU1fkNM-82" target="PA8Aa21u_JiDVCU1fkNM-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PA8Aa21u_JiDVCU1fkNM-82" value="调用updateLastNetLoc：&lt;br&gt;把location缓存到_lastNetLocArray中，现在的时间到_lastNetLocTime大于4移除_lastNetLocArray元素，[_lastNetLocArray count] &amp;gt; 3，移除第一个元素，现在的时间赋值给_lastNetLocTime" style="whiteSpace=wrap;fontSize=13;strokeColor=#000000;fontColor=#000000;rounded=0;labelBackgroundColor=#FFFFFF;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1155.15" width="220" height="119.69" as="geometry" />
+        </mxCell>
+        <mxCell id="PA8Aa21u_JiDVCU1fkNM-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=13;fontColor=#000000;" edge="1" parent="1" source="PA8Aa21u_JiDVCU1fkNM-84" target="PA8Aa21u_JiDVCU1fkNM-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PA8Aa21u_JiDVCU1fkNM-84" value="调用filterloc = [self getFilterLocation];过滤location信息。将lastNetLocArray中3个位置信息的经纬度取平均值，重新到一个location" style="whiteSpace=wrap;fontSize=13;strokeColor=#000000;fontColor=#000000;rounded=0;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1092.5" y="1160" width="257.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PA8Aa21u_JiDVCU1fkNM-86" value="调用c++函数setVdrBleLoc，给vdr设置蓝牙位置信息&#xa;g_vdr_manager.setVdrBleLoc(filterloc.coordinate.longitude, filterloc.coordinate.latitude, location.horizontalAccuracy, delayTime, -1, floorstr, _lastInoutFlag, timestamp);" style="whiteSpace=wrap;fontSize=13;strokeColor=#000000;fontColor=#000000;rounded=0;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="1150" width="456.25" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
