@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-13T06:36:39.845Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="xH5Mbb5_00mO3pWW0Hj9" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-13T11:50:47.502Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="XZWiTqgIcO5fUyX77HDP" version="20.4.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1914" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -327,8 +327,435 @@
         <mxCell id="EPskbmEzv3JA4iDegfrs-109" value="更新最近蓝牙定位的附加信息(包括停车位code识别结果、停车位code示例、vdr推算结果置信度等)&#xa;[lastIosUpdateLocation updateExtrainfo:_lastBluetoothLocation.extraInfo];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="2377.5" y="2206.96" width="365" height="160" as="geometry" />
         </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-115" target="EPskbmEzv3JA4iDegfrs-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="EPskbmEzv3JA4iDegfrs-115" value="开启vdr定位模式&#xa;-(void)startVdrLocationWithNaviPoints:(NSArray * _Nullable)naviPoints;" style="rounded=0;whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="10" y="2400" width="320" height="145" as="geometry" />
+          <mxGeometry x="10" y="2542" width="320" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-119" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-116" target="EPskbmEzv3JA4iDegfrs-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-238" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;entryX=-0.012;entryY=0.44;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-116" target="EPskbmEzv3JA4iDegfrs-234">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="2770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="2615" />
+              <mxPoint x="650" y="2861" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-240" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-116" target="EPskbmEzv3JA4iDegfrs-239">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="2614" />
+              <mxPoint x="650" y="3116" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-116" value="解析naviPoints获取字典&#xa;NSDictionary * dic = [[naviPoints objectAtIndex:0] mutableCopy];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="380" y="2555.75" width="200" height="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-121" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-118" target="EPskbmEzv3JA4iDegfrs-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-118">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1140" y="3180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1040" y="2614" />
+              <mxPoint x="1040" y="3180" />
+              <mxPoint x="1126" y="3180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-118" value="当Vdrmanger和字典不为空时" style="rhombus;whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="755" y="2555.75" width="240" height="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-123" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-120" target="EPskbmEzv3JA4iDegfrs-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-120" value="字典中navistatus == 1&#xa;int naviStatus = [[dic valueForKey:@&quot;navi_status&quot;] intValue];" style="rhombus;whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1085" y="2480" width="405" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-125" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-122" target="EPskbmEzv3JA4iDegfrs-126">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2546" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-122" value="vdr更新定位的位置信息&#xa;[_vdrManager updateCLLocation:lastIosUpdateLocation];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1550" y="2496.5" width="290" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-129" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-126" target="EPskbmEzv3JA4iDegfrs-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-133" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="EPskbmEzv3JA4iDegfrs-129">
+          <mxGeometry x="-0.0559" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-141" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-126" target="EPskbmEzv3JA4iDegfrs-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-142" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="EPskbmEzv3JA4iDegfrs-141">
+          <mxGeometry x="-0.0876" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-126" value="是否是卫星定位" style="rhombus;whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1940" y="2490.5" width="280" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-131" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-128" target="EPskbmEzv3JA4iDegfrs-130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-132" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="EPskbmEzv3JA4iDegfrs-131">
+          <mxGeometry x="-0.1441" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-135" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-128" target="EPskbmEzv3JA4iDegfrs-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-139" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="EPskbmEzv3JA4iDegfrs-135">
+          <mxGeometry x="-0.187" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-128" value="是否存在蓝牙vdr,并且开启&#xa;if (_bleVdr &amp;&amp; _bleVdr.isStarted)" style="rhombus;whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2300" y="2490.5" width="280" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-130" value="蓝牙vdr更新卫星定位信息&#xa;[_bleVdr updateGnssLocation" style="whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2660" y="2503" width="240" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-134" target="EPskbmEzv3JA4iDegfrs-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-138" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="EPskbmEzv3JA4iDegfrs-137">
+          <mxGeometry x="-0.1418" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-134" value="是否存在轻量级vdr&#xa;if (_simpleVdr)" style="rhombus;whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2300" y="2660" width="280" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-136" value="轻量级vdr更新卫星定位位置信息&#xa;&#xa;[_simpleVdr updateGnssLocation" style="whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2675" y="2667.25" width="210" height="88.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="EPskbmEzv3JA4iDegfrs-152">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2080" y="2710" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="2080" y="2847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-155" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="EPskbmEzv3JA4iDegfrs-154">
+          <mxGeometry x="-0.8101" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-140" value="是否是wifi定位&#xa;[self isWifiLocation:location]" style="rhombus;whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1975" y="2665" width="210" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-157" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-150" target="EPskbmEzv3JA4iDegfrs-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-186" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-150" target="EPskbmEzv3JA4iDegfrs-185">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1450" y="3176" />
+              <mxPoint x="1450" y="3545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-213" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-150" target="EPskbmEzv3JA4iDegfrs-212">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1450" y="3175" />
+              <mxPoint x="1450" y="3965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-225" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-150" target="EPskbmEzv3JA4iDegfrs-224">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1450" y="3175" />
+              <mxPoint x="1450" y="4418" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-150" value="vdrManager更新导航信息&#xa;[_vdrManager updateNaviInfo:dic];" style="rounded=0;whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1140" y="3120" width="251.12" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-152" value="轻量级vdr更新定位位置信息&#xa;simpleVdr setVdrWfLoc:" style="whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2675" y="2802" width="238.75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-159" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-156" target="EPskbmEzv3JA4iDegfrs-158">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-156" value="dic存在导航状态&#xa;if ([dic valueForKey:@&quot;navi_status&quot;])" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1506.12" y="3061.25" width="232.5" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-161" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-158" target="EPskbmEzv3JA4iDegfrs-160">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-177" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-158" target="EPskbmEzv3JA4iDegfrs-176">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-182" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-158" target="EPskbmEzv3JA4iDegfrs-181">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2070" y="3104" />
+              <mxPoint x="2070" y="3340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-158" value="更新导航状态&#xa;&#xa;[self updateNaviStatus:(BLKVdrState)status];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1836.12" y="3050" width="201.25" height="107.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-163" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-160" target="EPskbmEzv3JA4iDegfrs-162">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-160" value="开始导航&#xa;&#xa;[self startNavi]" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2100.01" y="2980" width="179.99" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-165" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-162" target="EPskbmEzv3JA4iDegfrs-164">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-162" value="更新开始导航的位置&#xa;_simpleVdr从室内停车类别和开始位置开始推算&#xa;[_simpleVdr startWithIndoorParkDetector:_indoorParkDetector withNaviStartLocation:_naviStartLocation];&#xa;开启vdr定时器&#xa;[self startVdrLocationTimer];&#xa;定时器请求引擎的结果，用于保存引擎返回的数据和更新vdr&#xa;[self requestVdrEngineResult]" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2347.5" y="2920" width="390" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-167" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-164" target="EPskbmEzv3JA4iDegfrs-166">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-175" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-164" target="EPskbmEzv3JA4iDegfrs-174">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-164" value="回调给BMKlocation当前导航状态，开始，结束等&#xa;[_delegate blkVdrLocationManager:self updateNaviState:BLKVdrStateStartNavi];&#xa;" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2810" y="2945" width="287.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-169" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-166" target="EPskbmEzv3JA4iDegfrs-168">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-166" value="如果是开始导航状态，如果存在室内区域BMKIndoorRegion，vdr更新室内区域和进入状态&#xa;[_vdrManager updateIndoorRegion:temp withState:BMKIndoorRegionStateEnter];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3190" y="2820" width="250" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-171" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-168" target="EPskbmEzv3JA4iDegfrs-170">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-173" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-168" target="EPskbmEzv3JA4iDegfrs-172">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-168" value="更新室内区域的进入和离开状态&#xa;-(void)updateIndoorRegion:(BMKIndoorRegion * _Nonnull)indoorRegion withState:(BMKIndoorRegionState)state" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3540" y="2813.75" width="400" height="162.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-170" value="如果是进入室内区域，开始蓝牙vdr，配置蓝牙vdr的一些室内区域参数，link配置&#xa;-(void)startBleVdrWithIndoorRegion:(BMKIndoorRegion *_Nonnull)indoorRegion withNaviLink:(NSArray * _Nullable)links" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4060" y="2752" width="440" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-172" value="如果是离开室内区域，停止蓝牙vdr&#xa;[self stopBleVdr];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4060" y="2960" width="440" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-174" value="如果是结束导航，更新室内location的室内区域位置和location&#xa;&#xa;[_indoorLocationManager startUpdatingLocationWithIndoorRegion:temp withCLLocation:lastIosUpdateLocation];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3190" y="3080" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-179" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-176" target="EPskbmEzv3JA4iDegfrs-178">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-176" value="停止导航&#xa;&#xa;stopNavi" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2100.01" y="3146.25" width="159.99" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-178" target="EPskbmEzv3JA4iDegfrs-164">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-178" value="如果存在轻量级vdr，轻量级vdr停止，&lt;br&gt;如果存在隧道vdr，隧道vdr停止，&lt;br&gt;如果存在漂移vdr，漂移vdr停止，&lt;br&gt;如果存在蓝牙vdr，蓝牙vdr停止，&lt;br&gt;停止vdr定时器，&lt;br&gt;vdr传感器销毁，&lt;br&gt;paddle销毁，" style="whiteSpace=wrap;html=1;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2347.5" y="3141.25" width="427.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-184" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-181" target="EPskbmEzv3JA4iDegfrs-183">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-181" value="触发偏航&#xa;[self updateTriggerYaw]" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2110.01" y="3310" width="159.99" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-183" value="如果存在隧道vdr，并且开启，&#xa;隧道vdr停止，&#xa;引擎设置偏航&#xa;g_vdr_manager.setVdrNaviYaw();&#xa;" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2360" y="3312.5" width="290.01" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-188" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-185" target="EPskbmEzv3JA4iDegfrs-187">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-185" value="dic存在link信息&#xa;[dic valueForKey:@&quot;update_navi_links&quot;]" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1520" y="3500" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-190" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-187" target="EPskbmEzv3JA4iDegfrs-189">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-194" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.557;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-187" target="EPskbmEzv3JA4iDegfrs-193">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-187" value="更新导航links信息&#xa;[self updateNaviLinks:tempdic];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1850.01" y="3472.5" width="260" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-192" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-189" target="EPskbmEzv3JA4iDegfrs-191">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-189" value="如果linkinfo包含隧道信息[linkInfo valueForKey:@&quot;tunnel&quot;]" style="rhombus;whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2185" y="3476.25" width="335" height="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-191" value="将隧道信息进行保存" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2610" y="3498.5" width="267.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-196" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-193" target="EPskbmEzv3JA4iDegfrs-195">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-193" value="&#xa;如果linkinfo包含shape_points&#xa;NSArray * naviLinks = [linkInfo valueForKey:@&quot;shape_points&quot;];&#xa;遍历navilink中，其中包含的道路字符串转化为BMKLocLatLon位置信息，存到数组中，&#xa;" style="rounded=0;whiteSpace=wrap;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2190" y="3670" width="330" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-198" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-195" target="EPskbmEzv3JA4iDegfrs-197">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-209" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-195" target="EPskbmEzv3JA4iDegfrs-208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-211" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-195" target="EPskbmEzv3JA4iDegfrs-210">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2890" y="3750" />
+              <mxPoint x="2890" y="4030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-195" value="更新漂移区域的道路位置信息&#xa;&#xa;[_swiftAreaMan updateNaviLinks:naviPoints];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2650" y="3690" width="185" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-200" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-197" target="EPskbmEzv3JA4iDegfrs-199">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-197" value="在室内如果没有开启导航，则开启导航&#xa;&#xa;[self startNavi];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2950" y="3640" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-202" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-199" target="EPskbmEzv3JA4iDegfrs-201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-204" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="EPskbmEzv3JA4iDegfrs-202">
+          <mxGeometry x="-0.2393" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-206" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-199" target="EPskbmEzv3JA4iDegfrs-205">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-207" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="EPskbmEzv3JA4iDegfrs-206">
+          <mxGeometry x="-0.1262" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-199" value="如果存在楼层的BMKLocLatLon&#xa;if (floorLoc)" style="rhombus;whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3290" y="3597.5" width="270" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-201" target="EPskbmEzv3JA4iDegfrs-170">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4600" y="3190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="4610" y="3685" />
+              <mxPoint x="4610" y="2801" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-201" value="更具楼层定位的信息，转化为系统的cllocation位置信息，根据位置信息得到室内区域位置，BMKIndoorRegion" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3690" y="3607.5" width="225" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-205" value="蓝牙vdr更新道路位置信息&#xa;&#xa;[_bleVdr setUpNaviLinks:naviLinks];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3625" y="3900" width="290" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-208" value="在隧道的情况下，如果隧道vdr没有开启，开启隧道vdr&#xa;[self startTunnelVdr];&#xa;更新隧道vdr的道路定位位置信息&#xa;[_tunnelVdr updateNaviRoadLinkInfo:naviLinkInfo];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2950" y="3780" width="250" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-210" value="轻量级vdr，更新道路定位位置信息&#xa;[_simpleVdr updateNaviRoadLinkInfo:naviLinkInfo];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2970" y="4000" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-215" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-212" target="EPskbmEzv3JA4iDegfrs-214">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-212" value="如果dic存在mmresult&#xa;[dic valueForKey:@&quot;navi_mm_result&quot;]" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1520.01" y="3895" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-217" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-214" target="EPskbmEzv3JA4iDegfrs-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2380" y="3965" />
+              <mxPoint x="2380" y="3905" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-219" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-214" target="EPskbmEzv3JA4iDegfrs-218">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2380" y="3965" />
+              <mxPoint x="2380" y="4015" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-221" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-214" target="EPskbmEzv3JA4iDegfrs-220">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2380" y="3965" />
+              <mxPoint x="2380" y="4145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-223" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-214" target="EPskbmEzv3JA4iDegfrs-222">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2380" y="3965" />
+              <mxPoint x="2380" y="4290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-214" value="更新导航中的mmresult&#xa;-(void)updateNaviMMResult:(NSDictionary *_Nonnull)mmInfo&#xa;取出mminfo中的经度，纬度，dis_cross&#xa;" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1940" y="3915" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-216" value="如果blevdr存在并开启，更新blevdr中经纬度时间戳等参数&#xa;[_bleVdr setVdrNaviMm:lon_mm withy:lat_mm withDis:disCross withTime:timestamp withIsNeedUpdateRoadNetData:YES];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2481" y="3859.99" width="319" height="90.01" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-218" value="如果隧道vdr存在，并开启，更新隧道vdr中经纬度，时间戳更参数&#xa;[_tunnelVdr setVdrNaviMm:lon_mm withy:lat_mm withDis:disCross withTime:timestamp withIsNeedUpdateRoadNetData:isUseRoadNetData];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2481" y="3970.01" width="339" height="89.99" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-220" value="如果漂移vdr存在，并开启，更新漂移vdr中经纬度，时间戳等参数&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;[_driftVdr setVdrNaviMm:lon_mm withy:lat_mm withDis:disCross withTime:timestamp withIsNeedUpdateRoadNetData:YES]" style="whiteSpace=wrap;html=1;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2480" y="4100" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-222" value="如果轻量级vdr存在并开启，更新轻量级vdr中经纬度，时间戳等参数&#xa;[_simpleVdr setVdrNaviMm:lon_mm withy:lat_mm withDis:disCross withTime:timestamp withIsNeedUpdateRoadNetData:NO];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2480" y="4240" width="390" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-227" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-224" target="EPskbmEzv3JA4iDegfrs-226">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-224" value="如果dic存在附加信息&#xa;[dic valueForKey:@&quot;navi_extra_info&quot;]" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1520" y="4372.5" width="330" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-231" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-226" target="EPskbmEzv3JA4iDegfrs-230">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-233" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EPskbmEzv3JA4iDegfrs-226" target="EPskbmEzv3JA4iDegfrs-232">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2250" y="4417" />
+              <mxPoint x="2250" y="4560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-226" value="更新导航中的附加信息&#xa;-(void)updateNaviExtraInfo:(NSDictionary *_Nonnull)extraInfo" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1955" y="4370" width="265" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-230" value="extraInfo中存在net_vdr_parkingarea_switch&#xa;更新轻量级vdr中停车区域开关&#xa;[_simpleVdr updateParkingAreaSwitch:temp];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2377.5" y="4361.25" width="317.5" height="112.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-232" value="extraInfo中存在vdr_disable&#xa;[extraInfo valueForKey:@&quot;vdr_disable&quot;]&#xa;更新导航中vdr中的可用状态&#xa;[_vdrStatistics updateNaviEnableVdrState:_isEnableVdr];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2377.5" y="4500" width="332.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-234" value="如果字典存在，字典中navi_status存在，&#xa;if (dic != nil &amp;&amp; [dic valueForKey:@&quot;navi_status&quot;]) &#xa;如果室内停车存在，更新室内停车的导航状态&#xa;[_indoorParkDetector updateNaviStatus:naviStatus];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="690" y="2795" width="320" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EPskbmEzv3JA4iDegfrs-239" value="如果字典存在，字典的navi_mm_result存在&#xa;dic != nil &amp;&amp; [dic valueForKey:@&quot;navi_mm_result&quot;]&#xa;mm_result中dis_to_endpoint存在&#xa;室内停车更新距终点的距离&#xa;[_indoorParkDetector updateDisToEndPoint:disToEndPoint];" style="whiteSpace=wrap;fontSize=14;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="709.5" y="3020" width="285.5" height="177.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
